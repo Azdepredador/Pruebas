@@ -48,12 +48,6 @@ public interface HelloVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitConditional(@NotNull HelloParser.ConditionalContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link HelloParser#expresionPri}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExpresionPri(@NotNull HelloParser.ExpresionPriContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link HelloParser#valor}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -95,12 +89,6 @@ public interface HelloVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitTerm(@NotNull HelloParser.TermContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link HelloParser#factorPri}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFactorPri(@NotNull HelloParser.FactorPriContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link HelloParser#var_decl}.
 	 * @param ctx the parse tree

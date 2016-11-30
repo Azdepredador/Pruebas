@@ -57,16 +57,6 @@ public interface HelloListener extends ParseTreeListener {
 	 */
 	void exitConditional(@NotNull HelloParser.ConditionalContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link HelloParser#expresionPri}.
-	 * @param ctx the parse tree
-	 */
-	void enterExpresionPri(@NotNull HelloParser.ExpresionPriContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link HelloParser#expresionPri}.
-	 * @param ctx the parse tree
-	 */
-	void exitExpresionPri(@NotNull HelloParser.ExpresionPriContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link HelloParser#valor}.
 	 * @param ctx the parse tree
 	 */
@@ -136,16 +126,6 @@ public interface HelloListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTerm(@NotNull HelloParser.TermContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link HelloParser#factorPri}.
-	 * @param ctx the parse tree
-	 */
-	void enterFactorPri(@NotNull HelloParser.FactorPriContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link HelloParser#factorPri}.
-	 * @param ctx the parse tree
-	 */
-	void exitFactorPri(@NotNull HelloParser.FactorPriContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HelloParser#var_decl}.
 	 * @param ctx the parse tree

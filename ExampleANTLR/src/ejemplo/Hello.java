@@ -9,18 +9,15 @@ import ejemplo.HelloParser;
 
 public class Hello {
 	
+	public static StringBuilder st= new StringBuilder();
 	
   public static void main( String[] args) throws Exception 
   {
 	  
 	ANTLRInputStream input= new ANTLRInputStream("program MiPrograma {"
-			+ "var a;"
-			+ "var b;"
-			+ "a=5;"
-			+ "b=10;"
-			+ "if(1 < 3 && a < b && 2<3){"
-			+ "println b;"
-			+ "}else{ println a; }"
+			+ "if(1 < 3){"
+			+ "if(6 < 6){println 666;} else{println 777;}"
+			+ "}else{ println 10; }"
 			+ "}"
 			+ "");
 	
@@ -30,6 +27,8 @@ public class Hello {
 	 * bloque	  
 	 * 
 	 */
+	st.append("EXTERN .bss\n");
+	
     HelloLexer lexer = new HelloLexer(input);
     CommonTokenStream tokens = new CommonTokenStream( lexer );
     HelloParser parser = new HelloParser( tokens );
@@ -37,7 +36,7 @@ public class Hello {
     ParseTreeWalker walker = new ParseTreeWalker();
     walker.walk( new HelloWalker(), tree );
    
-
+    System.out.print(st.toString());
     
     
     

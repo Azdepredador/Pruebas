@@ -71,18 +71,6 @@ public class HelloBaseListener implements HelloListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpresionPri(@NotNull HelloParser.ExpresionPriContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitExpresionPri(@NotNull HelloParser.ExpresionPriContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterValor(@NotNull HelloParser.ValorContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -162,18 +150,6 @@ public class HelloBaseListener implements HelloListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitTerm(@NotNull HelloParser.TermContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFactorPri(@NotNull HelloParser.FactorPriContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFactorPri(@NotNull HelloParser.FactorPriContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
